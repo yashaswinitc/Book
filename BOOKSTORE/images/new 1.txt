@@ -1,0 +1,43 @@
+
+            <td>&nbsp;</td>
+
+            <td width="480" height="490" align="center"><h><center><strong>BOOK STORE</strong></h></br><img src="4.JPG" width="300" height="250"/>
+</br>
+<h1>&nbsp;  ”The meaning is clear. Reading books allows us to experience the world through the eyes of others—whether those eyes are the author’s or those of the characters the author creates. Stories well told allow us to live many lives.
+Another unidentified sentiment about books says: “A good book on your shelf is a friend that turns its back on you and remains a friend.”</h1>
+
+</td></tr>
+	<tr><td width="480" height="490" valign="left"><h><center><strong>READING BOOKS</strong></h></br><img src="32.jpg" width="300" height="250"/>
+</br>
+<h1> &nbsp;  ”Reading books allows us to experience the world through the eyes of others—whether those eyes are the author’s or those of the characters the author creates. Stories well told allow us to live many lives.
+Another unidentified sentiment about books says: “A good book on your shelf is a friend that turns its back on you and remains a friend.”</h1>
+
+
+</td><td>&nbsp;</td>
+            <td width="480" height="490" align="right"><h><center><strong>AUTHORSs</strong></h></br><img src="th.jpg" width="300" height="250"/>
+	</br><h1>&nbps;  ” Reading books allows us to experience the world through the eyes of others—whether those eyes are the author’s or those of the characters the author creates. Stories well told allow us to live many lives.
+Another unidentified sentiment about books says: “A good book on your shelf is a friend that turns its back on you and remains a friend.”</h1>
+ 
+ 
+</td></tr>
+	<tr><td width="480" height="490" valign="left"><h><center><strong>READING BOOKS</strong></h></br><img src="32.jpg" width="300" height="250"/>
+</br>
+<h1> &nbsp;  ”Reading books allows us to experience the world through the eyes of others—whether those eyes are the author’s or those of the characters the author creates. Stories well told allow us to live many lives.
+Another unidentified sentiment about books says: “A good book on your shelf is a friend that turns its back on you and remains a friend.”</h1>
+
+
+
+</td></tr>
+	<tr><td width="480" height="490" valign="left"><h><center><strong>READING BOOKS</strong></h></br><img src="32.jpg" width="300" height="250"/>
+</br>
+<h1> &nbsp;  ”Reading books allows us to experience the world through the eyes of others—whether those eyes are the author’s or those of the characters the author creates. Stories well told allow us to live many lives.
+Another unidentified sentiment about books says: “A good book on your shelf is a friend that turns its back on you and remains a friend.”</h1>
+
+ 
+ 
+</td></tr>
+
+
+
+
+ <td height="180" background="1.jpg"></td></tr>

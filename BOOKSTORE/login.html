@@ -1,0 +1,151 @@
+<html>
+<head>
+<style type="text/css">
+body{
+margin:0;
+background:bg1.jpg;
+}
+
+.vid-container{
+  position:relative;
+  height:100vh;
+  overflow:hidden;
+}
+.bgvid.back {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+}
+.inner {
+  position: absolute;
+}
+.inner-container{
+  width:700px;
+  height:500px;
+  position:absolute;
+  top:calc(50vh - 250px);
+  left:calc(50vw - 300px);
+  overflow:hidden;
+}
+.bgvid.inner{
+  top:calc(-50vh + 200px);
+  left:calc(-50vw + 200px);
+  filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur");
+  -webkit-filter:blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
+  filter:blur(10px);
+}
+.box{
+  position:absolute;
+  height:150%;
+  width:100%;
+  font-family:Helvetica;
+  color:#fff;
+  background:rgba(0,0,0,0.15);
+  padding:30px 0px;
+}
+.box input:focus,.box input:active,.box button:focus,.box button:active{
+  outline:none;
+}
+.box h1{
+  text-align:center;
+  margin:30px 0;
+  font-size:30px;
+}
+.box input{
+  display:block;
+  width:300px;
+  margin:20px auto;
+  padding:15px;
+  background:rgba(0,0,0,0.2);
+  color:#fff;
+  border:2;
+}
+/*
+.box button{
+  background:#000000;
+  border:0;
+  color:#fff;
+  padding:10px;
+  font-size:20px;
+  width:330px;
+  margin:20px auto;
+  display:block;
+  cursor:pointer;
+}
+.box button:active{
+  background:#27ae60;
+}*/
+.box p{
+  font-size:14px;
+  text-align:center;
+}
+.box p span{
+  cursor:pointer;
+  color:#fff;
+}
+a{
+
+font-size:20px;
+color:#000000;
+}
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+var promises = [];
+function makePromise(i, video) {
+  promises[i] = new $.Deferred();
+  // This event tells us video can be played all the way through, without stopping or buffering
+  video.oncanplaythrough = function() {
+    // Resolve the promise
+    promises[i].resolve();
+  }
+}
+// Pause all videos and create the promise array
+$('video').each(function(index){
+  this.pause();
+  makePromise(index, this);
+})
+
+// Wait for all promises to resolve then start playing
+$.when.apply(null, promises).done(function () {
+  $('video').each(function(){
+    this.play();
+  });
+});
+
+</script>
+
+
+      <a href="start.html">Go Back</a>
+
+
+
+<div class="vid-container">
+  <video id="Video1" class="bgvid back" autoplay="false" muted="muted" preload="auto" loop>
+      <source src="http://shortcodelic1.manuelmasiacsasi.netdna-cdn.com/themes/geode/wp-content/uploads/2014/04/milky-way-river-1280hd.mp4.mp4" type="video/mp4">
+  </video>
+  <div class="inner-container">
+    <video id="Video2" class="bgvid inner" autoplay="false" muted="muted" preload="auto" loop>
+      <source src="http://shortcodelic1.manuelmasiacsasi.netdna-cdn.com/themes/geode/wp-content/uploads/2014/04/milky-way-river-1280hd.mp4.mp4" type="video/mp4">
+    </video>
+    <div class="box">
+<form action="thank.html" method="post">
+      <h1>Enter the source and destination</h1>
+   <p><span>  Enter registered phone No:<input type="number" placeholder="number"/>
+     Source:<input type="text" placeholder="source"/>
+     Destination: <input type="text" placeholder="destination"/>
+      <input type="submit" value="submit"/>
+     </span></p>
+</form>
+    </div>
+  </div>
+</div>
+
+// Easy way to wait for all videos to load before start playing
+
+</body>
+</html>

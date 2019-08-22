@@ -1,0 +1,12 @@
+//document.addEventListener('DOMContentLoaded',function(){
+	if(typeof TelemetryAgentPageData !== 'undefined'){
+		var queryLog = pageQuery.Log.replace(/&quot;/g, '"');
+		var queryLog = jQuery.parseJSON(queryLog);
+	    pageData.statisticData(true,queryLog,function(){
+	        if(config.pageData.allowAjaxStatistics){
+    	       	this.pageData.telemetryAgentAjaxStatistics();
+    	    } 
+	    });
+	    
+	}
+//});
